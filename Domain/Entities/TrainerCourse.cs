@@ -1,8 +1,12 @@
+using Domain.Entities;
+
 namespace Domain.Entitites
 {
-    public class TrainerCourse
+    public class TrainerCourse:BaseEntity
     {
-        public int IdPerson { get; set; }
+        public string IdPerson { get; set; }
         public int IdCourse { get; set; }
+        public Person People { get; set; }
+        public Course Courses { get; set; }
     }
 }

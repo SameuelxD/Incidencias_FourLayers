@@ -11,7 +11,7 @@ namespace Domain.Entitites
         public int SecondaryRoadNumber { get; set; }
         public string SecondaryRoadLetter { get; set; }
         public string CardsSuffix { get; set; }
-        public int IdPerson { get; set; }
-        
+        public string IdPerson { get; set; }
+        public Person People { get; set; }
     }
 }

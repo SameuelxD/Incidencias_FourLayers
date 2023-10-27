@@ -6,6 +6,8 @@ namespace Domain.Entitites
     {
         public string IdCity { get; set; }
         public string Name { get; set; }
-        public int IdDepartment { get; set; }
+        public string IdDepartment { get; set; }
+        public ICollection<Person> People { get; set; }
+        public Department Departments { get; set; }
     }
 }
